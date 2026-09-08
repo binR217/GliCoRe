@@ -39,17 +39,6 @@ The three modules below address these axes in turn.
 
 ---
 
-## 📊 Main Results (BraTS)
-
-| Metric | Average over WT / ET / TC |
-|---|---|
-| Dice ↑ | **85.38%** |
-| HD95 ↓ | **2.91 mm** |
-
-GliCoRe outperforms all compared methods under the same protocol; experiments on Synapse and ACDC further indicate transferability beyond brain-tumor segmentation.
-
----
-
 ## 📂 Project Structure
 
 ```text
