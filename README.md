@@ -5,7 +5,7 @@
 
  [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 
-![GliCoRe overview](docs/GliCoRe_PACER.png)
+![GliCoRe overview](docs/Overview+PACER.png)
 ---
 
 ## 🚀 Overview
