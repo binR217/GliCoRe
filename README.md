@@ -3,7 +3,7 @@
 **Official PyTorch Implementation of the Paper:**
 > **GliCoRe: Coherent Representation Refinement for Glioma Subregion Segmentation**
 
-[![Paper](https://img.shields.io/badge/Paper-IEEE%20TMI-blue)](#citation) [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
+ [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 
 <!-- TODO: add overview figure, e.g. ![](docs/figures/GliCoRe_overview.png) -->
 
