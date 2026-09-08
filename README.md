@@ -5,6 +5,7 @@
 
  [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 
+e.g. ![](docs/GliCoRe_PACER.png）
 <!-- TODO: add overview figure, e.g. ![](docs/figures/GliCoRe_overview.png) -->
 
 ---
