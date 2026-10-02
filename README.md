@@ -29,12 +29,12 @@ The three modules below address these axes in turn.
 - **Training-only**: disabled at inference, so it adds no inference-time cost.
 
 ### 2. MEFC — Multi-scale Evidential Frequency Calibration
-- **FAEC**: patch-level spectral-energy calibration on the full-resolution feature.
+- **FAEC**: patch-level spectral-energy calibration followed by learned low-/high-frequency response construction on the full-resolution feature.
 - **FATB**: temperature-controlled evidence at two decoder scales (`E₂`, `E₃`).
-- **FECE**: uncertainty-gated mixing of low-/high-frequency branches; fine evidence intervenes only within enhancing-tumor candidates and whole-tumor boundaries.
+- **FECE**: uncertainty-gated routing of the FAEC responses; fine evidence intervenes only within enhancing-tumor candidates and whole-tumor boundaries.
 
 ### 3. UBTR — Uncertainty-Boundary Topology Refinement
-- **UBER**: uncertainty-gated injection of spatial + frequency edge cues at uncertain locations.
+- **UBER (Uncertainty-Based Edge Refinement)**: uncertainty-gated injection of spatial + frequency edge cues at uncertain locations.
 - **AdaTER**: morphological envelopes and a learnable class-relation matrix rectify subregion topology.
 
 ---
@@ -61,14 +61,13 @@ The three modules below address these axes in turn.
 │   ├── utilities/
 │   └── glicore_config.py           # paper-aligned constants
 ├── training_scripts/               # train_brats.sh / train_synapse.sh / train_acdc.sh
-├── tests/                          # static release + naming/contract checks
 ├── docs/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
-**Method-to-code map** (key files):
+Method-to-code map** (key files):
 
 - **PACER** → `glicore/network_architecture/tumor/pacer.py`, `glicore/training/network_training/pacer_training_support.py`
 - **MEFC (FAEC + FECE)** → `glicore/network_architecture/tumor/`
